@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gas Booking</title>
+<style>
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    background-color: #444;
+}
+
+nav ul li {
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+main {
+    padding: 2rem;
+    padding-top: 100px;
+}
+
+.booking-form {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 2rem auto;
+}
+
+.booking-form h2 {
+    margin-top: 0;
+}
+
+.booking-form label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-size: 20px;
+}
+
+.booking-form input,
+.booking-form select {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.booking-form input[type="submit"] {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 1rem;
+}
+
+.booking-form input[type="submit"]:hover {
+    background-color: #555;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+</style>
+</head>
+<body>
+    <header>
+        <h1>Gas Booking Service</h1><br>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Book</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="booking-form">
+            <u><h1>Book Your Gas Cylinder</h1></u><br>
+                <label for="phone"><b>Contact Number</b></label>
+                <input type="tel" id="phone" name="phone" required>
+                <br>
+                <label for="num-cylinders"><b>Number of Cylinder</b></label>
+                <input type="number" id="num-cylinders" name="num-cylinders" required>
+                <br>
+                <label for="gas-type"><b>Type of Cylinder</b></label>
+                <select id="gas-type" name="gas-type" required>
+                    <option value="domestic">Domestic</option>
+                    <option value="commercial">Commercial</option>
+                </select>
+                <input type="submit" value="Book Now">
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Gas Booking Service. All rights reserved.</p>
+    </footer>
+</body>
+</html>
