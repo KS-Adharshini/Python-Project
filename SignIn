@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+<style>
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav {
+    background-color: #000;
+    position: fixed;
+    width: 100%;
+    padding: 1rem 0;
+}
+
+nav ul {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: right;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    margin: 0 1rem;
+    display: block;
+}
+
+nav ul li a:hover {
+    background-color: #555;
+    border-radius: 4px;
+}
+
+main {
+    padding: 8rem 2rem 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.booking-form {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    width: 100%;
+}
+
+.booking-form label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #333;
+    font-size: 20px;
+}
+
+.booking-form input,
+.booking-form select {
+    width: 100%;
+    padding: 0.75rem;
+    margin-bottom: 1rem;
+    box-sizing: border-box;
+}
+
+.booking-form button[type="submit"] {
+    width: 100%;
+    padding: 1rem;
+    border-radius: 4px;
+    background-color: #333;
+    color: #fff;
+}
+
+.booking-form button[type="submit"]:hover {
+    background-color: #555;
+}
+
+.booking-form .login-link,
+.booking-form .forgot-password {
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.booking-form .login-link a,
+.booking-form .forgot-password a {
+    color: #333;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.booking-form .forgot-password a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+</style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section class="booking-form">
+            <form>
+                <label for="name"><b>Name</b></label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                <label for="number"><b>Phone Number</b></label>
+                <input type="text" id="number" name="number" placeholder="Enter your number" required>
+                <label for="newpassword"><b>Password</b></label>
+                <input type="password" id="newpassword" name="newpassword" placeholder="Enter new password" minlength="8" maxlength="15" pattern="[a-zA-Z0-9]+" required>
+                <button type="submit" name="submit" value="submit">Submit</button>
+                <div class="forgot-password">
+                    <a href="#forgot-password">Forgot Password?</a>
+                </div>
+            </form>
+        </section>
+    </main>
+</body>
+<footer>
+    <p>&copy; 2024 Gas Booking Service. All rights reserved.</p>
+</footer>
+</html>
