@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gas Booking Service</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+body {
+    background-color: #f8f9fa;
+  }
+  
+  .navbar {
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .jumbotron {
+    background-color: #e9ecef;
+  }
+  
+  .jumbotron h1 {
+    color: #343a40;
+  }
+  
+  .jumbotron p {
+    color: #6c757d;
+  }
+  
+  .jumbotron a.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+  }
+  
+  .jumbotron a.btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+  }
+  
+  .jumbotron a.btn-primary:focus {
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.5);
+  }
+
+  footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indo Gas Company</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f9f9f9;
+            color: #000;
+        }
+        .navbar {
+            background-color: #000;
+        }
+        
+        .section {
+            padding: 3rem 0;
+        }
+        .btn-custom {
+            border-radius: 20px;
+            padding: 10px 20px;
+            background-color: #000;
+            color: #ffffff;
+            border: 2px solid #000;
+        }
+        .btn-custom:hover {
+            background-color: #ffffff;
+            color: #000;
+            border-color: #000;
+        }
+        .card {
+            border: none;
+            margin-bottom: 2rem;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 20px rgba(0, 0, 0, 0.3);
+        }
+        .card .card-header {
+            background: #000000;
+            color: #ffffff;
+            font-size: 1.2rem;
+        }
+        .card .card-body .symbol {
+            font-size: 24px;
+            margin-right: 10px;
+        }
+        .card img {
+            max-width: 100%;
+            border-radius: 8px;
+        }
+        .interesting-facts {
+            font-style: italic;
+            color: #b5b3b3;
+        }
+        body{
+            background: linear-gradient(120deg, #e4babe,  #fcf1ef,  #e8d8c9,  #ced3d7 ,  #5e606c);
+        }
+        .new{
+            background-color: #ffffff;
+            border: none;
+            color: rgb(0, 0, 0);
+            padding: 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 40px;
+            margin: 4px 2px;
+            border-radius: 15px;
+            font-style: Lucida Console;
+        }
+    </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="#">Gas Booking Service</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item ">
+            <a class="nav-link" href="C:\Python project\homepage1.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="C:\Python project\About.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="C:\Python project\contact.html">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+<br><br>
+<div class="container mt-5">
+  <div class="jumbotron" style="background-color: white;">
+    <h1 class="display-4">Welcome to Gas Booking Service</h1>
+    <p class="lead">Book your gas hassle-free with us!</p>
+    <hr class="my-4">
+    <p>We provide efficient and reliable gas booking services. Get your gas cylinders delivered to your doorstep.</p>
+    <a class="btn btn-primary btn-lg" href="#" role="button">Book Now</a>
+  </div>
+</div>
+<div class="container mt-5">
+  <div class="row">
+<div class="content-section text-center" id="rooms">
+  <h1 class="new">Products Available</h1><br><br>
+  <div class="row">
+      <div class="col-md-4 mb-4">
+          <div class="card">
+            <div style="text-align: center;">
+              <img style="width: 50%; height: 50%;" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDvMBb2SWcyUcIxbw5JYqUlLTKdQsRtLy6wg&s" class="card-img-top" alt="Single Room">
+            </div>
+              <div class="card-body">
+                  <h5 class="card-title">Diesel fuel</h5>
+                  <p class="card-text">1-Litre  ₹92.15</p>
+                  <a href="#" class="btn btn-primary">View Details</a>
+              </div>
+          </div>
+      </div>
+      <div class="col-md-4 mb-4">
+          <div class="card">
+            <div style="text-align: center;">
+              <img style="width: 50%; height: 50%;" src="https://cdn4.iconfinder.com/data/icons/oil-production-cartoon/512/val54_13-1024.png" class="card-img-top" alt="Double Room">
+              </div>
+              <div class="card-body">
+                  <h5 class="card-title">Petrol</h5>
+                  <p class="card-text">1-Litre   ₹104.21</p>
+                  <a href="#" class="btn btn-primary">View Details</a>
+              </div>
+          </div>
+      </div>
+      <div class="col-md-4 mb-4">
+          <div class="card">
+            <div style="text-align: center;">
+              <img style="width: 50%; height: 50%;" src="data:image/jpeg;base64,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" class="card-img-top" alt="Suite">
+            </div>
+              <div class="card-body">
+                  <h5 class="card-title">Cylinder</h5>
+                  <p class="card-text">1-Piece   ₹829</p>
+                  <a href="#" class="btn btn-primary">View Details</a>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+<div class="content-section text-center" id="rooms">
+  <div class="row">
+      <div class="col-md-4 mb-4">
+          <div class="card">
+            <div style="text-align: center;">
+              <img style="width: 50%; height: 50%;" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfZhUwEMj9srTAvZep9wB1dUKHFyD1YWmD2w&s" class="card-img-top" alt="Single Room">
+            </div>
+              <div class="card-body">
+                  <h5 class="card-title">Fire Extinguisher</h5>
+                  <p class="card-text">1-Piece   ₹3170</p>
+                  <a href="#" class="btn btn-primary">View Details</a>
+              </div>
+          </div>
+      </div>
+      <div class="col-md-4 mb-4">
+          <div class="card">
+            <div style="text-align: center;">
+              <img style="width: 50%; height: 50%;" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQG6a3DdKMp2Jv2hycbROYRfJ2Iz1vHv7o2_g&s" class="card-img-top" alt="Double Room">
+            </div>
+              <div class="card-body">
+                  <h5 class="card-title">Kerosene Oil</h5>
+                  <p class="card-text">1-Litre   ₹104.21</p>
+                  <a href="#" class="btn btn-primary">View Details</a>
+              </div>
+          </div>
+      </div>
+      <div class="col-md-4 mb-4">
+          <div class="card">
+            <div style="text-align: center;">
+              <img style="width: 50%; height: 50%;" src="https://thumbs.dreamstime.com/b/gas-station-cartoon-icon-single-symbol-white-background-65076255.jpg" class="card-img-top" alt="Suite">
+              </div>
+              <div class="card-body">
+                  <h5 class="card-title">Liquefied Natural Gas</h5>
+                  <p class="card-text">1-Metric ton  ₹2400</p>
+                  <a href="#" class="btn btn-primary">View Details</a>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+</div>
+</div>
+<br><br>
+
+</div>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
